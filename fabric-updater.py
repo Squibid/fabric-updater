@@ -3,9 +3,6 @@ if os.name == 'nt':
     osExt = 'bat'
 else:
     osExt = 'sh'
-class Color:
-    RED = '\033[91m'
-    END = '\033[0m'
 def backup(bkup):
     if bkup == "Y":
         dst = input("Where would you like the files backed up too? ")
