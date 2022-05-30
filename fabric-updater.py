@@ -33,9 +33,9 @@ def install(version, ram, eula, start):
     if version == "L":
         version = input("Enter the path to a local server Jar: ")
     else:
-        os.system('curl -OJ https://meta.fabricmc.net/v2/versions/loader/' + version +'/0.14.5/0.10.2/server/jar')
+        os.system('curl -OJ https://meta.fabricmc.net/v2/versions/loader/' + version +'/0.14.6/0.11/server/jar')
     f = open("start." + osExt, "a")
-    f.write("java -Xmx" + ram + " -jar fabric-server-mc." + version + "-loader.0.14.5-launcher.0.10.2.jar nogui")
+    f.write("java -Xmx" + ram + " -jar fabric-server-mc." + version + "-loader.0.14.6-launcher.0.11.jar nogui")
     f.close()
     f = open("eula.txt", "a")
     f.write("eula=" + eula)
